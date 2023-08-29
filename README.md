@@ -7,6 +7,10 @@ Chatbot construido con DialogFlow para la automatizacion por llamadas telefonica
 
 Este es un proyecto que implementa un voicebot creado con Dialogflow CX y Twilio para automatizar las reservas de taxis. Utiliza una base de datos Spanner para almacenar información sobre las solicitudes y direcciones y un webhook para integrar el bot con la base de datos.
 
+## Numero de Telefono para pruebas
+
++18147476608 
+
 ## Características
 
 - Automatiza el proceso de reserva de taxis a través de llamadas telefónicas.
@@ -14,6 +18,7 @@ Este es un proyecto que implementa un voicebot creado con Dialogflow CX y Twilio
 - Twilio se encarga de manejar las llamadas telefónicas entrantes y salientes.
 - La base de datos Spanner almacena información sobre los usuarios como su direccion, numero de contacto y nombre.
 - El webhook se utiliza para interactuar con la base de datos y otros sistemas externos.
+- Se implementaron Google Cloud Functions con Python para consultar la base de datos
 
 ## Requisitos
 
@@ -35,7 +40,7 @@ Este es un proyecto que implementa un voicebot creado con Dialogflow CX y Twilio
 
 ## Uso
 
-1. Ejecuta la aplicación localmente: `python app.py`.
+1. Importa el JSON en un proyecto DialogFlow CX.
 2. Configura el webhook URL en Dialogflow CX para apuntar a tu servidor.
 3. Prueba el voicebot realizando llamadas y realizando reservas de taxis.
 
