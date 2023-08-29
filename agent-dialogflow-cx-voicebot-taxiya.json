@@ -1,0 +1,1049 @@
+{
+  "flow": {
+    "flow": {
+      "flowId": "6dcb9293-ab64-436b-a1b2-d50ec4128b9b",
+      "displayName": "Default Start Flow 2",
+      "description": "A start flow created along with the agent",
+      "transitionEvents": [ {
+        "triggerIntentId": "00000000-0000-0000-0000-000000000000",
+        "transitionEventHandler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "es"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Hola mucho gusto, se esta comunicando con \"Taxi Ya\" de la ciudad de Tunja"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          },
+          "targetPageId": "b639101a-0acc-49a7-91b6-9b210498b070"
+        },
+        "name": "6ccef71c-c284-4536-8ddb-849b42776499"
+      } ],
+      "modelIdentifier": {
+        "modelId": "f2cbaba8-3c71-468e-8218-39f9242569e3"
+      },
+      "conversationEvents": [ {
+        "event": "sys.no-match-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "es"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Ups, no he entendido a que te refieres."
+                    }, {
+                      "text": "¿Podrías repetirlo, por favor?"
+                    }, {
+                      "text": "¿Disculpa?"
+                    }, {
+                      "text": "¿Decías?"
+                    }, {
+                      "text": "¿Cómo?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "25e4b42a-48e9-4e34-8dc4-bc61e8f268b2"
+      }, {
+        "event": "sys.no-input-default",
+        "handler": {
+          "beforeTransition": {
+            "staticUserResponse": {
+              "candidates": [ {
+                "selector": {
+                  "platform": [ "PLATFORM_UNSPECIFIED" ],
+                  "lang": "es"
+                },
+                "responses": [ {
+                  "text": {
+                    "variants": [ {
+                      "text": "Ups, no he entendido a que te refieres."
+                    }, {
+                      "text": "¿Podrías repetirlo, por favor?"
+                    }, {
+                      "text": "¿Disculpa?"
+                    }, {
+                      "text": "¿Decías?"
+                    }, {
+                      "text": "¿Cómo?"
+                    } ]
+                  }
+                } ]
+              } ]
+            }
+          }
+        },
+        "name": "142b3910-dbc2-43e6-bd18-f452016f244f"
+      } ],
+      "nluSettings": {
+        "classificationThreshold": 0.30000001,
+        "modelType": "MODEL_TYPE_STANDARD",
+        "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+        "customConfigKey": "66418ce4-4210-4116-ac2e-b1eebe69e4cb",
+        "multiIntentSettings": {
+        
+        }
+      },
+      "ivrSettings": {
+        "enableIvr": true
+      },
+      "etag": "64ece5ab"
+    },
+    "intents": [ {
+      "meta": {
+        "id": "2ec4d7a9-13f8-45ac-9911-ecb197d32f1f",
+        "displayName": "no",
+        "priority": 500000,
+        "etag": "64ecac57"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "no",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "no, muchas gracias"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "7b1d67fb-2525-479e-bacc-bf1b4efaf29e",
+        "displayName": "gracias",
+        "priority": 500000,
+        "etag": "64ecad61"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "chao",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hasta luego"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "muchas gracias"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "dbed7053-de4f-4773-a5ab-85c1defd865d",
+        "displayName": "confirmarTelefono",
+        "priority": 500000,
+        "etag": "64ed1021"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "si"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Confirmo"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "El teléfono es correcto"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Esta bien"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "De acuerdo"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Si"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "8a2e486a-f4f5-4d6a-918f-666d40ec0d7f",
+        "displayName": "modificarDireccion",
+        "priority": 500000,
+        "etag": "64ea23cb"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "la dirección no "
+        }, {
+          "text": "es"
+        }, {
+          "text": " correcta"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Esta incorrecta"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "No"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "2426e520-1f26-4d06-990f-e829030ea87b",
+        "displayName": "confirmDireccion",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "location",
+          "displayName": "location",
+          "value": "$location",
+          "entityTypeDisplayName": "@sys.location"
+        }, {
+          "id": "any",
+          "displayName": "any",
+          "value": "$any",
+          "entityTypeDisplayName": "@sys.any"
+        } ],
+        "etag": "64ea2039"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "correcto",
+          "entityType": "@sys.any",
+          "alias": "any",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "la dirección es correcta"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "De acuerdo"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Perfecto"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "Si"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000000",
+        "displayName": "Welcome",
+        "priority": 500000,
+        "etag": "64ecb68c"
+      },
+      "trainingPhrases": [ {
+        "id": "2006fe40-1398-4b8d-818d-e963c584b4f5",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hola"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "id": "8f9a8db8-8d64-4cc5-986a-5394f0db6573",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hey"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "id": "d65683e7-130f-4459-802e-8704d45b20fd",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "saludos"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "id": "16fa45ab-8a98-4294-b289-9cfce616660b",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "hey ho"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "id": "fa71a9ef-f093-4f1d-8846-519154a0c9a8",
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "chao"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "00000000-0000-0000-0000-000000000001",
+        "displayName": "Default Negative Intent",
+        "priority": 500000,
+        "isFallback": true
+      }
+    }, {
+      "meta": {
+        "id": "26ea88a8-46d4-4eb8-bef9-b2a68003b68e",
+        "displayName": "solicitarTaxi",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "location",
+          "displayName": "location",
+          "value": "$location",
+          "entityTypeDisplayName": "@sys.location"
+        } ],
+        "etag": "64ec9456"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "taxi",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "solicitar "
+        }, {
+          "text": "taxi",
+          "entityType": "@sys.location",
+          "alias": "location"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "aecee41b-463e-44c5-bcc1-9b698491bdae",
+        "displayName": "usuarioExistente",
+        "priority": 500000,
+        "parameters": [ {
+          "id": "any",
+          "displayName": "any",
+          "value": "$any",
+          "entityTypeDisplayName": "@sys.any"
+        } ],
+        "etag": "64ec3767"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "si por favor"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "si"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "3c387b9e-a471-48f6-a447-7cb167660f0c",
+        "displayName": "modificarTelefono",
+        "priority": 500000,
+        "etag": "64ea1ba4"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "El numero no esta correcto"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "No"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    }, {
+      "meta": {
+        "id": "5da31e46-7eff-4595-8e1f-82f3dacad53c",
+        "displayName": "cambiarDireccionExistente",
+        "priority": 500000,
+        "etag": "64eca641"
+      },
+      "trainingPhrases": [ {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "cambiar direccion",
+          "userDefined": true
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      }, {
+        "type": "EXAMPLE",
+        "parts": [ {
+          "text": "no"
+        } ],
+        "timesAddedCount": 1,
+        "lang": "es"
+      } ]
+    } ],
+    "pages": [ {
+      "key": "45811ad5-6d93-4bbb-b242-4bd022a2f8dc",
+      "value": {
+        "displayName": "addServicio",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "es"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Su solicitud ha sido procesada, su servicio de taxi esta en camino. Gracias por elegirnos"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "7b1d67fb-2525-479e-bacc-bf1b4efaf29e",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "e8b92e04-a84e-4834-83a1-788c91f1ff26"
+        } ],
+        "etag": "64ecad65"
+      }
+    }, {
+      "key": "46828da6-5453-4549-9cfe-0669758e42ee",
+      "value": {
+        "displayName": "taxi",
+        "onLoad": {
+        
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "26ea88a8-46d4-4eb8-bef9-b2a68003b68e",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "f1e18280-4fc9-4b14-adcf-d5a0f256a8cd"
+          },
+          "name": "dffdb4ec-8479-48fb-bd78-dda57be1b9e9"
+        }, {
+          "triggerIntentId": "aecee41b-463e-44c5-bcc1-9b698491bdae",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "45811ad5-6d93-4bbb-b242-4bd022a2f8dc"
+          },
+          "name": "3c4d49b2-fe6c-49f1-a65a-b0cc561d259f"
+        }, {
+          "triggerIntentId": "5da31e46-7eff-4595-8e1f-82f3dacad53c",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "5d044521-22aa-4bf9-9b45-faeea012c33c"
+          },
+          "name": "11622f07-842a-410f-81f8-805bae74e1ef"
+        } ],
+        "etag": "64eca668"
+      }
+    }, {
+      "key": "5d044521-22aa-4bf9-9b45-faeea012c33c",
+      "value": {
+        "displayName": "actualizarDireccion",
+        "slots": [ {
+          "displayName": "direccion",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@sys.address",
+            "classType": "BUILT_IN_CLASS"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Por favor indiquenos su nueva direccion"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          }
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "function": {
+                "name": "actualizarDireccion",
+                "webhookFulfillmentId": "89f8c7fc-c392-47c7-bdbe-bec5e8e8dd31"
+              }
+            },
+            "targetPageId": "9e90cb2b-8a86-4152-a007-dd3b553b7b2b"
+          },
+          "name": "704b1e8e-5299-40fa-8678-2739110b082e",
+          "conditionString": "$page.params.status = \"FINAL\""
+        } ],
+        "etag": "64ecaba5"
+      }
+    }, {
+      "key": "64a5bbcd-736d-478b-8c6d-62710bfb3942",
+      "value": {
+        "displayName": "telefono",
+        "onLoad": {
+        
+        },
+        "slots": [ {
+          "displayName": "telefono",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@sys.number",
+            "classType": "BUILT_IN_CLASS"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Me indicas tu número de teléfono"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          }
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Me confirma por favor si su número telefónico es $Intent.params.telefono?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "c97323e6-ee4a-42ea-a951-7d4c25517b61"
+          },
+          "name": "b97230a9-27a9-469d-9773-2cf76a8c1df3",
+          "conditionString": "$page.params.status = \"FINAL\""
+        } ],
+        "etag": "64ed12dc"
+      }
+    }, {
+      "key": "9e90cb2b-8a86-4152-a007-dd3b553b7b2b",
+      "value": {
+        "displayName": "solicitarTaxi",
+        "transitionEvents": [ {
+          "triggerIntentId": "2426e520-1f26-4d06-990f-e829030ea87b",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "function": {
+                "name": "solicitud",
+                "webhookFulfillmentId": "bf72c574-b303-4542-b7b3-7bf3492d238c"
+              }
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "101a7057-ee4e-4200-bf2f-e6517df4d0c7"
+        }, {
+          "triggerIntentId": "2ec4d7a9-13f8-45ac-9911-ecb197d32f1f",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Muchas gracias por preferirnos, hasta pronto!"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "3da80f97-aa38-4b0d-92f1-515af103a348"
+        } ],
+        "etag": "64ecac8a"
+      }
+    }, {
+      "key": "b639101a-0acc-49a7-91b6-9b210498b070",
+      "value": {
+        "displayName": "nombre",
+        "onLoad": {
+        
+        },
+        "slots": [ {
+          "displayName": "nombre",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@sys.any",
+            "classType": "BUILT_IN_CLASS"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Con quien tengo el gusto?"
+                      }, {
+                        "text": "Con quien me estoy comunicando?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          }
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Hola $Intent.params.nombre"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "64a5bbcd-736d-478b-8c6d-62710bfb3942"
+          },
+          "name": "ab0e420e-f8f2-40d3-892d-bdf32041fb20",
+          "conditionString": "$page.params.status = \"FINAL\""
+        } ],
+        "etag": "64ec2a36"
+      }
+    }, {
+      "key": "c97323e6-ee4a-42ea-a951-7d4c25517b61",
+      "value": {
+        "displayName": "confirmTel",
+        "onLoad": {
+        
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "dbed7053-de4f-4773-a5ab-85c1defd865d",
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "un momento estamos verificando su numero telefonico en nuestro sistema"
+                      } ]
+                    }
+                  } ]
+                } ]
+              },
+              "function": {
+                "name": "telefono",
+                "webhookFulfillmentId": "5a0da374-fe74-46b4-a0f3-675589869c81"
+              }
+            },
+            "targetPageId": "46828da6-5453-4549-9cfe-0669758e42ee"
+          },
+          "name": "e7c6fbb3-1b1d-4f43-9c99-dabdb4781e0c",
+          "conditionString": "$page.params.status = \"FINAL\""
+        }, {
+          "triggerIntentId": "3c387b9e-a471-48f6-a447-7cb167660f0c",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "64a5bbcd-736d-478b-8c6d-62710bfb3942"
+          },
+          "name": "e741418f-496d-43b0-9528-83b159f13aaa"
+        } ],
+        "etag": "64ed1027"
+      }
+    }, {
+      "key": "d6dde39c-a7c5-47e3-8bb2-30cced4b8908",
+      "value": {
+        "displayName": "cancelarTaxi",
+        "onLoad": {
+          "staticUserResponse": {
+            "candidates": [ {
+              "selector": {
+                "platform": [ "PLATFORM_UNSPECIFIED" ],
+                "lang": "es"
+              },
+              "responses": [ {
+                "text": {
+                  "variants": [ {
+                    "text": "Gracias por preferirnos, hasta pronto!"
+                  } ]
+                }
+              } ]
+            } ]
+          }
+        },
+        "etag": "64ec3387"
+      }
+    }, {
+      "key": "e8932408-7b4a-4ff0-8126-81699350e1f5",
+      "value": {
+        "displayName": "confirmDireccion",
+        "onLoad": {
+        
+        },
+        "transitionEvents": [ {
+          "triggerIntentId": "2426e520-1f26-4d06-990f-e829030ea87b",
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "function": {
+                "name": "solicitud",
+                "webhookFulfillmentId": "bf72c574-b303-4542-b7b3-7bf3492d238c"
+              }
+            },
+            "targetPageId": "END_FLOW"
+          },
+          "name": "16978d58-95ff-4844-8e6b-47d9b79e9e17"
+        }, {
+          "triggerIntentId": "8a2e486a-f4f5-4d6a-918f-666d40ec0d7f",
+          "transitionEventHandler": {
+            "beforeTransition": {
+            
+            },
+            "targetPageId": "f1e18280-4fc9-4b14-adcf-d5a0f256a8cd"
+          },
+          "name": "46fd73ce-0bbb-41ef-823d-79faa2c74dd0"
+        } ],
+        "etag": "64ecf2cd"
+      }
+    }, {
+      "key": "f1e18280-4fc9-4b14-adcf-d5a0f256a8cd",
+      "value": {
+        "displayName": "direccion",
+        "onLoad": {
+        
+        },
+        "slots": [ {
+          "displayName": "direccion",
+          "mode": "REQUIRED",
+          "type": {
+            "className": "@sys.address",
+            "classType": "BUILT_IN_CLASS"
+          },
+          "fillBehavior": {
+            "initialPrompt": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Me indicas a que direccion requiere el servicio de taxi"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            }
+          }
+        } ],
+        "transitionEvents": [ {
+          "condition": {
+            "restriction": {
+              "comparator": "EQUALS",
+              "lhs": {
+                "member": {
+                  "expressions": [ {
+                    "value": "$page"
+                  }, {
+                    "value": "params"
+                  }, {
+                    "value": "status"
+                  } ]
+                }
+              },
+              "rhs": {
+                "phrase": {
+                  "values": [ "FINAL" ]
+                }
+              }
+            }
+          },
+          "transitionEventHandler": {
+            "beforeTransition": {
+              "staticUserResponse": {
+                "candidates": [ {
+                  "selector": {
+                    "platform": [ "PLATFORM_UNSPECIFIED" ],
+                    "lang": "es"
+                  },
+                  "responses": [ {
+                    "text": {
+                      "variants": [ {
+                        "text": "Me confirmas por favor si su dirección es $Intent.params.direccion?"
+                      } ]
+                    }
+                  } ]
+                } ]
+              }
+            },
+            "targetPageId": "e8932408-7b4a-4ff0-8126-81699350e1f5"
+          },
+          "name": "c0e180ba-2764-4f82-9884-5058eb5087e2",
+          "conditionString": "$page.params.status = \"FINAL\""
+        } ],
+        "etag": "64ed1327"
+      }
+    } ],
+    "fulfillments": [ {
+      "key": "5a0da374-fe74-46b4-a0f3-675589869c81",
+      "value": {
+        "id": "5a0da374-fe74-46b4-a0f3-675589869c81",
+        "name": "consultarTelefono",
+        "webhook": {
+          "url": "https://us-central1-earnest-topic-397119.cloudfunctions.net/consultar_telefono",
+          "webhookTimeout": 5,
+          "webhookType": "STANDARD"
+        },
+        "etag": "64ec01e8"
+      }
+    }, {
+      "key": "89f8c7fc-c392-47c7-bdbe-bec5e8e8dd31",
+      "value": {
+        "id": "89f8c7fc-c392-47c7-bdbe-bec5e8e8dd31",
+        "name": "cancelarSolicitud",
+        "webhook": {
+          "url": "https://us-central1-earnest-topic-397119.cloudfunctions.net/cancelar_solicitud",
+          "webhookTimeout": 5,
+          "webhookType": "STANDARD"
+        },
+        "etag": "64ec28b2"
+      }
+    }, {
+      "key": "bf72c574-b303-4542-b7b3-7bf3492d238c",
+      "value": {
+        "id": "bf72c574-b303-4542-b7b3-7bf3492d238c",
+        "name": "registrarSolicitud",
+        "webhook": {
+          "url": "https://us-central1-earnest-topic-397119.cloudfunctions.net/registrar_telefono",
+          "webhookTimeout": 5,
+          "webhookType": "STANDARD"
+        },
+        "etag": "64ec9703"
+      }
+    } ]
+  }
+}
